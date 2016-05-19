@@ -25,7 +25,7 @@ public abstract class RecyclerAdapter<T> extends BaseAdapter<T, BaseViewHolder> 
     public BaseViewHolder onCreate(ViewGroup parent, int viewType) {
         BaseViewHolder baseViewHolder;
         if (viewType == TYPE_HEADER) {
-            baseViewHolder = new BaseViewHolder(getHeaderView());
+            baseViewHolder = new  BaseViewHolder(getHeaderView());
         } else if (viewType == TYPE_FOOTER) {
             baseViewHolder = new BaseViewHolder(getFooterView());
         } else {
